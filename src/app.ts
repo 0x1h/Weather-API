@@ -13,9 +13,7 @@ interface weatherInt<T> {
   src: T;
 }
 
-enum keyCodes {
-  enter = 13,
-}
+enum keyCodes { enter = 13 }
 
 let weatherImg: weatherInt<string>[] = [
   { weather: "clear sky", src: "/assets/clear-sky.png" },
