@@ -87,12 +87,10 @@ class Weather {cityName: string;
   }
 }
 
-const weatherAPI = async (city: string|null) => {
+const weatherAPI = async (city: string | null) => {
   return await axios
-    .get(
-      `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=e882a2abbf0750c5de17295ecb4b9c3d`
-    )
-    .then((response) => {
+    .get(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=e882a2abbf0750c5de17295ecb4b9c3d`)
+    .then(response => {
       let filteredWeatherData: any[] = [];
 
       for (let i = 0; i <= 32; i += 8) {
