@@ -15,6 +15,29 @@ npm install webpack webpack-cli ts-loader -D
 ```js
 npm install Tyepscript -D 
 ```
+Configuration of `webpack.config.js`
+
+```js
+module.exports = {
+  entry: './src/index.ts',
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+};
+```
 
 for more details you can visit [Webpack Server Configuration](https://webpack.js.org/configuration/dev-server/) and [Webpack for Typesccript](https://webpack.js.org/guides/typescript/)
 
@@ -22,7 +45,4 @@ for more details you can visit [Webpack Server Configuration](https://webpack.js
 
 * **HTML**
 * **SCSS**
-* **Typescript**
-
-
-* **Axios Library**
+* **Typescript / Axios Library**
