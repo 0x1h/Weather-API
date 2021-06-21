@@ -38,7 +38,7 @@ module.exports = {
 };
 ```
 
-for more details you can visit [Webpack Server Configuration](https://webpack.js.org/configuration/dev-server/) and [Webpack for Typesccript](https://webpack.js.org/guides/typescript/)
+for more details you can visit [Webpack Server Configuration](https://webpack.js.org/configuration/dev-server/) and [Webpack for Typescript](https://webpack.js.org/guides/typescript/)
 
 ## Languages Used
 
