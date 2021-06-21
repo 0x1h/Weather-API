@@ -13,7 +13,7 @@ npm install webpack webpack-cli ts-loader -D
 ```
 
 ```js
-npm install Tyepscript -D 
+npm install Typescript -D 
 ```
 Configuration of `webpack.config.js`
 
