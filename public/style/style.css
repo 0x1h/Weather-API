@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.form-box, .form-box .form-field form, .container main .card .Date, .container main .card .img-container, .container main .card .grid-content .value-content, .alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #00305a;
+}
+
+.form-box .form-field {
+  border-radius: 50px;
+  margin-top: 10px;
+  background: #fff;
+  width: 800px;
+  height: 55px;
+  align-items: center;
+  display: flex;
+  border: 5px solid #07233b;
+}
+
+.form-box .form-field form {
+  width: 100%;
+}
+
+.form-box .form-field form input {
+  width: 84%;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  margin: 0 40px;
+  text-decoration: none;
+}
+
+.form-box .form-field form button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-self: flex-end;
+  outline: none;
+  border: none;
+  background: #3076b3;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-box .form-field form button:active {
+  background: #104644;
+}
+
+.city-container {
+  width: 100%;
+  height: 100px;
+  padding-top: 30px;
+  padding-left: 44px;
+}
+
+.city-container h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 660px) {
+  .city-container h1 {
+    text-align: center;
+    transform: translateX(-20px);
+  }
+}
+
+.container {
+  width: 100%;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+}
+
+@media screen and (max-width: 1350px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+}
+
+.container main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 660px) {
+  .container main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.container main .card {
+  margin-top: 20px;
+  background: #cee8ff;
+  width: 280px;
+  height: 400px;
+  border-radius: 50px;
+}
+
+.container main .card .Date {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.container main .card .img-container {
+  width: 100%;
+  height: 150px;
+  flex-direction: column;
+}
+
+.container main .card .img-container img {
+  width: 190px;
+  margin-top: 50px;
+}
+
+.container main .card .img-container h1 {
+  font-size: 3.4em;
+  color: #0d2925;
+  transform: translate(10px, -50px);
+  font-weight: 600;
+}
+
+.container main .card .img-container p {
+  font-size: 1.2rem;
+  transform: translateY(-40px);
+}
+
+.container main .card .grid-content {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin-top: 70px;
+  width: 100%;
+  place-items: center;
+}
+
+.container main .card .grid-content .value-content {
+  place-items: center;
+  flex-direction: column;
+}
+
+.container main .card .grid-content .value-content h1 {
+  font-size: 1.5em;
+}
+
+.container main .card .grid-content .value-content p {
+  font-size: 0.9em;
+}
+
+.alert {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

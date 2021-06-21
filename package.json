@@ -1,0 +1,24 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "weather-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "server": "webpack-dev-server"
+  },
+  "author": "callmenik",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.2.3",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "date.js": "^0.3.3",
+    "datejs": "^1.0.0-rc3"
+  }
+}

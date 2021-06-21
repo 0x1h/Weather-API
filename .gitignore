@@ -1,0 +1,8 @@
+# ts-loeader, webpack
+node_modules
+
+# Webpack configuration for axios library
+webpack.config.js
+
+# typescript configs
+package-lock.json

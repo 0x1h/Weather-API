@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css" />
+    <link rel="shortcut icon" href="/assets/web-logo.png" />
+    <title>Weather | API</title>
+</head>
+<body>
+    <h1 class="alert"></h1>
+    <div class="form-box">
+        <div class="form-field">
+          <form onSubmit="return false;">
+            <input type="text" placeholder="Search City" spellcheck="false" />
+            <button data-border type="button">
+              <i class="fas fa-search" style="color: #fff"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- city name -->
+      <div class="city-container">
+      </div>
+      <!-- weather container -->
+      <div class="container"></div>
+</body>
+<script src="/public/dist/app.js"></script>
+</html>
