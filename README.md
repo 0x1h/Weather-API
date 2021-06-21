@@ -18,7 +18,7 @@ Configuration of `webpack.config.js`
 
 ```js
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/app.ts',
   module: {
     rules: [
       {
@@ -32,7 +32,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: 'bundle.js',
+    filename: 'app.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };
