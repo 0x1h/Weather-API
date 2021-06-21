@@ -39,8 +39,7 @@ class Weather {cityName: string;
   humidity: number;
   day: string;
 
-  constructor(day: string, cityName: string,weather: string,tempDegree: number,windSpeed: number,seaLevel: number,humidity: number
-  ) {
+  constructor(day: string, cityName: string,weather: string,tempDegree: number,windSpeed: number,seaLevel: number,humidity: number) {
     this.cityName = cityName;
     this.weather = weather;
     this.tempDegree = tempDegree;
