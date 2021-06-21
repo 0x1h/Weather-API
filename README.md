@@ -18,3 +18,10 @@ npm install Tyepscript -D
 
 for more details you can visit [Webpack Server Configuration](https://webpack.js.org/configuration/dev-server/) and [Webpack for Typesccript](https://webpack.js.org/guides/typescript/)
 
+## Languages Used
+
+* **HTML**
+* **SCSS**
+* **Typescript**
+
+* **Axios Library**
