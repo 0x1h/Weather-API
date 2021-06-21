@@ -98,7 +98,7 @@ const weatherAPI = async (city: string|null) => {
       for (let i = 0; i <= 32; i += 8) {
         errorMessage.innerHTML = ''
         const dateFormatAPI = response.data.list[i].dt_txt.split(/[\s,]+/)[0].split("-");
-        const alignedDate: string = String([dateFormatAPI[1],dateFormatAPI[2],dateFormatAPI[0],])
+        const alignedDate: string = String([dateFormatAPI[1],dateFormatAPI[2],dateFormatAPI[0]])
           .replace(",", "-")
           .replace(",", "-");
 
