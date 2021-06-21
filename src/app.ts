@@ -29,7 +29,8 @@ let weatherImg: weatherInt<string>[] = [
   {weather: "light rain", src: "/assets/shower-rain.png"}
 ];
 
-class Weather {cityName: string;
+class Weather {
+  cityName: string;
   weather: string;
   tempDegree: number;
   windSpeed: number;
