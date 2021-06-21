@@ -5,7 +5,7 @@ Weather website which has more than 200,000 cities data, API used from [openweat
 website uses **[Axios](https://github.com/axios/axios)** library for HTTP Requests 
 ## Configuration 
 
-Install **Webpack** for Axios library to make readable for Typescript and also create `webpack.config.js` file and config it on your own
+Install **Webpack** for Axios library to make readable Typescript and also create `webpack.config.js` file and config it on your own
 
 ```js
 npm install webpack webpack-cli ts-loader -D
