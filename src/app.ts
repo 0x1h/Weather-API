@@ -6,8 +6,6 @@ const cityName = document.querySelector(".city-container") as HTMLDivElement;
 const mainContainer = document.querySelector(".container") as HTMLDivElement;
 const errorMessage = document.querySelector('.alert') as HTMLElement
 
-let days: string[] = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday",];
-
 interface weatherInt<T> {
   weather: string;
   src: T;
@@ -93,15 +91,14 @@ const weatherAPI = async (city: string | null) => {
 
       for (let i = 0; i <= 32; i += 8) {
         errorMessage.innerHTML = ''
-        const dateFormatAPI = response.data.list[i].dt_txt.split(/[\s,]+/)[0].split("-");
-        const alignedDate: string = String([dateFormatAPI[1],dateFormatAPI[2],dateFormatAPI[0]])
-          .replace(",", "-")
-          .replace(",", "-");
-
-        const date = new Date(alignedDate);
+        let [y, m, d] = response.data.list[i].dt_txt
+          .split(/[\s,]+/)[0]
+          .split(/\D/);
+            
+        const date: Date = new Date(y, m - 1, d)
 
         const weather = new Weather(
-          days[date.getDay()],
+          date.toLocaleString("default", { weekday: "long" }),
           response.data.city.name,
           response.data.list[i].weather[0].description,
           response.data.list[i].main.temp_max,
