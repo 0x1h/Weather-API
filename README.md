@@ -17,6 +17,8 @@ npm install Typescript -D
 Configuration of `webpack.config.js`
 
 ```js
+const path = require('path');
+
 module.exports = {
   entry: './src/app.ts',
   module: {
